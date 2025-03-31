@@ -152,7 +152,7 @@ end_time - start_time
 ```
 
 ```
-## Time difference of 0.001704931 secs
+## Time difference of 0.002323151 secs
 ```
 
 
@@ -167,7 +167,7 @@ end_time - start_time
 ```
 
 ```
-## Time difference of 9.791747 secs
+## Time difference of 10.29641 secs
 ```
 
 
@@ -185,6 +185,6 @@ end_time - start_time
 ```
 
 ```
-## Time difference of 0.34408 secs
+## Time difference of 0.4208932 secs
 ```
 
