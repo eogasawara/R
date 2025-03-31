@@ -2,14 +2,7 @@
 ``` r
 #funções gráficas qplot
 ?qplot
-```
 
-```
-## Nenhuma documentação para 'qplot' nos pacotes e bibliotecas especificados:
-## você poderia tentar '??qplot'
-```
-
-``` r
 library(ggplot2)
 
 ?qplot
@@ -39,12 +32,6 @@ y
 
 ``` r
 qplot(x, y)
-```
-
-```
-## Warning: `qplot()` was deprecated in ggplot2 3.4.0.
-## This warning is displayed once every 8 hours.
-## Call `lifecycle::last_lifecycle_warnings()` to see where this warning was generated.
 ```
 
 ![plot of chunk unnamed-chunk-2](fig/02-Pacotes-Ajuda/unnamed-chunk-2-1.png)

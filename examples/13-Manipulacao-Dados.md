@@ -56,23 +56,6 @@ head(dsm)
 library(dplyr)
 ```
 
-```
-## 
-## Anexando pacote: 'dplyr'
-```
-
-```
-## Os seguintes objetos são mascarados por 'package:stats':
-## 
-##     filter, lag
-```
-
-```
-## Os seguintes objetos são mascarados por 'package:base':
-## 
-##     intersect, setdiff, setequal, union
-```
-
 
 ``` r
 result <- dsm |> 
