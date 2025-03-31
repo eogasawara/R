@@ -1,28 +1,44 @@
 
-```r
+``` r
 u <- "https://github.com/eogasawara/R/raw/main/baralho.rda"
 load(url(u))
+```
+
+```
+## Warning in load(url(u)): cannot open URL 'https://github.com/eogasawara/R/raw/main/baralho.rda': HTTP status was '404 Not Found'
+```
+
+```
+## Error in load(url(u)): cannot open the connection to 'https://github.com/eogasawara/R/raw/main/baralho.rda'
+```
+
+``` r
 head(baralho)
 ```
 
 ```
-##     face naipe
-## 1     ás ouros
-## 2   dois ouros
-## 3   três ouros
-## 4 quatro ouros
-## 5  cinco ouros
-## 6   seis ouros
+## Error: objeto 'baralho' não encontrado
 ```
 
 
-```r
+``` r
 save(baralho, file="baralho.rda")
+```
+
+```
+## Error in save(baralho, file = "baralho.rda"): objeto 'baralho' não encontrado
+```
+
+``` r
 rm(baralho)
 ```
 
+```
+## Warning in rm(baralho): objeto 'baralho' não encontrado
+```
 
-```r
+
+``` r
 load(file="baralho.rda")
 head(baralho)
 ```
@@ -38,7 +54,7 @@ head(baralho)
 ```
 
 
-```r
+``` r
 baralho$idx <- 1:52
 head(baralho)
 ```
@@ -54,7 +70,7 @@ head(baralho)
 ```
 
 
-```r
+``` r
 baralho$idx[c(1,3,5)] <- 1
 head(baralho)
 ```
@@ -69,7 +85,7 @@ head(baralho)
 ## 6   seis ouros   6
 ```
 
-```r
+``` r
 baralho$idx[4:6] <- baralho$idx[4:6] + 1
 head(baralho)
 ```
@@ -85,7 +101,7 @@ head(baralho)
 ```
 
 
-```r
+``` r
 baralho$idx <- 1:52
 vec <- (baralho$idx %% 2 == 1)
 idx <- baralho$idx[vec]
@@ -96,7 +112,7 @@ idx
 ##  [1]  1  3  5  7  9 11 13 15 17 19 21 23 25 27 29 31 33 35 37 39 41 43 45 47 49 51
 ```
 
-```r
+``` r
 cartas <- baralho[vec,]
 cartas
 ```
@@ -132,7 +148,7 @@ cartas
 ```
 
 
-```r
+``` r
 1 > 2
 ```
 
@@ -140,7 +156,7 @@ cartas
 ## [1] FALSE
 ```
 
-```r
+``` r
 1 > c(0, 1, 2)
 ```
 
@@ -148,7 +164,7 @@ cartas
 ## [1]  TRUE FALSE FALSE
 ```
 
-```r
+``` r
 c(1, 2, 3) == c(3, 2, 1)
 ```
 
@@ -156,7 +172,7 @@ c(1, 2, 3) == c(3, 2, 1)
 ## [1] FALSE  TRUE FALSE
 ```
 
-```r
+``` r
 1 %in% c(3, 4, 5)
 ```
 
@@ -164,7 +180,7 @@ c(1, 2, 3) == c(3, 2, 1)
 ## [1] FALSE
 ```
 
-```r
+``` r
 c(1, 2, 3) %in% c(3, 4, 5)
 ```
 
@@ -173,7 +189,7 @@ c(1, 2, 3) %in% c(3, 4, 5)
 ```
 
 
-```r
+``` r
 x <- baralho$face == "dama" & baralho$naipe == "espadas"
 head(baralho[x,])
 ```
@@ -183,7 +199,7 @@ head(baralho[x,])
 ## 51 dama espadas  51
 ```
 
-```r
+``` r
 x <- baralho$face == "dama" | baralho$naipe == "espadas"
 head(baralho[x,])
 ```
@@ -199,7 +215,7 @@ head(baralho[x,])
 ```
 
 
-```r
+``` r
 1 + NA
 ```
 
@@ -207,7 +223,7 @@ head(baralho[x,])
 ## [1] NA
 ```
 
-```r
+``` r
 NA == 1
 ```
 
@@ -215,16 +231,15 @@ NA == 1
 ## [1] NA
 ```
 
-```r
+``` r
 c(NA, 1:50)
 ```
 
 ```
-##  [1] NA  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48
-## [50] 49 50
+##  [1] NA  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50
 ```
 
-```r
+``` r
 mean(c(NA, 1:50))
 ```
 
@@ -232,7 +247,7 @@ mean(c(NA, 1:50))
 ## [1] NA
 ```
 
-```r
+``` r
 mean(c(NA, 1:50), na.rm = TRUE)
 ```
 
@@ -241,37 +256,37 @@ mean(c(NA, 1:50), na.rm = TRUE)
 ```
 
 
-```r
+``` r
 filtro <- baralho$valor < 3
 baralho[filtro, ]
 ```
 
 ```
 ## [1] face  naipe idx  
-## <0 rows> (or 0-length row.names)
+## <0 linhas> (ou row.names de comprimento 0)
 ```
 
-```r
+``` r
 baralho[baralho$valor < 3,]
 ```
 
 ```
 ## [1] face  naipe idx  
-## <0 rows> (or 0-length row.names)
+## <0 linhas> (ou row.names de comprimento 0)
 ```
 
 
-```r
+``` r
 ordem <- sample(1:nrow(baralho))
 ordem
 ```
 
 ```
-##  [1] 25 44 11 40 24 47 30 38 48 35 20 15 52 33  1 36 50 27 45 32  4 31  6 29 34 21  2 18 16 12 41 49  3 23  7  9 46 10 13 22  5 17 37 26 19 51 42  8 28
-## [50] 14 39 43
+##  [1] 25 44 11 40 24 47 30 38 48 35 20 15 52 33  1 36 50 27 45 32  4 31  6 29 34 21  2 18 16 12 41 49  3 23  7  9 46 10 13 22  5 17 37 26 19 51 42  8 28 14 39
+## [52] 43
 ```
 
-```r
+``` r
 cartas <- baralho[ordem,]
 cartas
 ```
@@ -333,7 +348,7 @@ cartas
 ```
 
 
-```r
+``` r
 embaralhar <- function(baralho) {
   ordem <- sample(1:nrow(baralho))
   return(baralho[ordem,])

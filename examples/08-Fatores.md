@@ -1,12 +1,12 @@
 
-```r
+``` r
 weight <- c(60, 72, 57, 90, 95, 72) 
 height <- c(1.75, 1.80, 1.65, 1.90, 1.74, 1.91)
 subject <- c("A", "B", "C", "D", "E", "F")
 ```
 
 
-```r
+``` r
 pain <- c(0,3,2,2,1)
 fpain <- factor(pain,levels=0:3, ordered=TRUE)
 fpain
@@ -18,7 +18,7 @@ fpain
 ```
 
 
-```r
+``` r
 levels(fpain) <- c("sem","baixa","média","alta")
 fpain
 ```
@@ -29,7 +29,7 @@ fpain
 ```
 
 
-```r
+``` r
 lev <- rep("", length(height))
 
 for (i in 1:length(height)) {
@@ -50,7 +50,7 @@ lev
 ```
 
 
-```r
+``` r
 lev <- cut(height, breaks=c(0, 1.7, 1.9, .Machine$double.xmax), ordered=TRUE)
 lev
 ```
@@ -60,7 +60,7 @@ lev
 ## Levels: (0,1.7] < (1.7,1.9] < (1.9,1.8e+308]
 ```
 
-```r
+``` r
 levels(lev) <- c("baixa", "média", "alta")
 lev
 ```

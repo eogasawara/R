@@ -1,5 +1,5 @@
 
-```r
+``` r
 weight <- c(60, 72, 57, 90, 95, 72) 
 height <- c(1.75, 1.80, 1.65, 1.90, 1.74, 1.91)
 subject <- c("A", "B", "C", "D", "E", "F")
@@ -18,7 +18,7 @@ head(d)
 ```
 
 
-```r
+``` r
 subject <- c("A", "B", "C", "D", "E", "F")
 state <- c("RJ", "SP", "MG", "RJ", "SP", "MG")
 ds <- data.frame(subject=subject, state=state)
@@ -36,7 +36,7 @@ head(d)
 ```
 
 
-```r
+``` r
 dsm <- merge(d, ds, by.x="subject", by.y="subject")
 head(dsm)
 ```
@@ -52,12 +52,29 @@ head(dsm)
 ```
 
 
-```r
+``` r
 library(dplyr)
 ```
 
+```
+## 
+## Anexando pacote: 'dplyr'
+```
 
-```r
+```
+## Os seguintes objetos são mascarados por 'package:stats':
+## 
+##     filter, lag
+```
+
+```
+## Os seguintes objetos são mascarados por 'package:base':
+## 
+##     intersect, setdiff, setequal, union
+```
+
+
+``` r
 result <- dsm |> 
     filter(height>1.7) |> 
     select(subject, weight, height) |> 
@@ -75,7 +92,7 @@ head(result)
 ```
 
 
-```r
+``` r
 result <- dsm |> 
     group_by(state) |>
     summarize(count = n(), height = mean(height))

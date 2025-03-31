@@ -1,5 +1,5 @@
 
-```r
+``` r
 dado <- c(1, 2, 3, 4, 5, 6)
 dado
 ```
@@ -8,7 +8,7 @@ dado
 ## [1] 1 2 3 4 5 6
 ```
 
-```r
+``` r
 is.vector(dado)
 ```
 
@@ -17,7 +17,7 @@ is.vector(dado)
 ```
 
 
-```r
+``` r
 numero <- 5
 numero
 ```
@@ -26,7 +26,7 @@ numero
 ## [1] 5
 ```
 
-```r
+``` r
 is.vector(numero)
 ```
 
@@ -34,7 +34,7 @@ is.vector(numero)
 ## [1] TRUE
 ```
 
-```r
+``` r
 length(numero)
 ```
 
@@ -42,7 +42,7 @@ length(numero)
 ## [1] 1
 ```
 
-```r
+``` r
 length(dado)
 ```
 
@@ -51,7 +51,7 @@ length(dado)
 ```
 
 
-```r
+``` r
 inteiro <- 1L
 texto <- "ás"
 
@@ -62,7 +62,7 @@ typeof(inteiro)
 ## [1] "integer"
 ```
 
-```r
+``` r
 typeof(texto)
 ```
 
@@ -71,7 +71,7 @@ typeof(texto)
 ```
 
 
-```r
+``` r
 cartas <- 1L:13L
 faces <- c("ás", "dois", "três", "quatro",
           "cinco", "seis", "sete", "oito",
@@ -85,7 +85,7 @@ is.integer(n)
 ## [1] TRUE
 ```
 
-```r
+``` r
 m <- max(faces)
 m
 ```
@@ -95,7 +95,7 @@ m
 ```
 
 
-```r
+``` r
 dado <- c(1, 2, 3, 4, 5, 6)
 dado
 ```
@@ -104,7 +104,7 @@ dado
 ## [1] 1 2 3 4 5 6
 ```
 
-```r
+``` r
 typeof(dado)
 ```
 
@@ -113,7 +113,7 @@ typeof(dado)
 ```
 
 
-```r
+``` r
 3 > 4
 ```
 
@@ -121,7 +121,7 @@ typeof(dado)
 ## [1] FALSE
 ```
 
-```r
+``` r
 logico <- c(TRUE, FALSE, 
             3 >= 4, 3 < 4, 
             3 <= 4, 3 < 4, 
@@ -133,7 +133,7 @@ logico
 ## [1]  TRUE FALSE FALSE  TRUE  TRUE  TRUE  TRUE  TRUE
 ```
 
-```r
+``` r
 typeof(logico)
 ```
 
@@ -142,7 +142,7 @@ typeof(logico)
 ```
 
 
-```r
+``` r
 comp <- c(1 + 1i, 1 + 2i, 1 + 3i)
 comp
 ```
@@ -151,7 +151,7 @@ comp
 ## [1] 1+1i 1+2i 1+3i
 ```
 
-```r
+``` r
 typeof(comp)
 ```
 
@@ -160,7 +160,7 @@ typeof(comp)
 ```
 
 
-```r
+``` r
 r <- raw(3)
 typeof(r)
 ```
@@ -169,16 +169,16 @@ typeof(r)
 ## [1] "raw"
 ```
 
-```r
+``` r
 r[2] <- as.raw(255) 
 r[3] <- as.raw(1024) 
 ```
 
 ```
-## Warning: out-of-range values treated as 0 in coercion to raw
+## Warning: valores fora do limite considerados como 0 na coerção para tipo raw
 ```
 
-```r
+``` r
 r
 ```
 
@@ -187,7 +187,7 @@ r
 ```
 
 
-```r
+``` r
 dado <- c(1,2,3,4,5,6)
 attributes(dado)
 ```
@@ -196,7 +196,7 @@ attributes(dado)
 ## NULL
 ```
 
-```r
+``` r
 names(dado) <- c("um", "dois", "três", 
                  'quatro', 'cinco', 'seis')
 attributes(dado)
@@ -208,7 +208,7 @@ attributes(dado)
 ```
 
 
-```r
+``` r
 names(dado) <- NULL
 dado
 ```
@@ -218,7 +218,7 @@ dado
 ```
 
 
-```r
+``` r
 dado <- 1:6
 dim(dado) <- c(2, 3)
 dado
@@ -230,7 +230,7 @@ dado
 ## [2,]    2    4    6
 ```
 
-```r
+``` r
 attributes(dado)
 ```
 
@@ -240,7 +240,7 @@ attributes(dado)
 ```
 
 
-```r
+``` r
 m <- matrix(dado, nrow = 2)
 m
 ```
@@ -251,7 +251,7 @@ m
 ## [2,]    2    4    6
 ```
 
-```r
+``` r
 n <- matrix(dado, nrow = 2, byrow = TRUE)
 n
 ```
@@ -263,7 +263,7 @@ n
 ```
 
 
-```r
+``` r
 typeof(dado)
 ```
 
@@ -271,7 +271,7 @@ typeof(dado)
 ## [1] "integer"
 ```
 
-```r
+``` r
 class(dado)
 ```
 
@@ -279,7 +279,7 @@ class(dado)
 ## [1] "matrix" "array"
 ```
 
-```r
+``` r
 attributes(dado)
 ```
 
@@ -289,16 +289,16 @@ attributes(dado)
 ```
 
 
-```r
+``` r
 now <- Sys.time()
 now
 ```
 
 ```
-## [1] "2024-12-11 05:16:27 -03"
+## [1] "2025-03-31 14:53:22 -03"
 ```
 
-```r
+``` r
 typeof(now)
 ```
 
@@ -306,7 +306,7 @@ typeof(now)
 ## [1] "double"
 ```
 
-```r
+``` r
 class(now)
 ```
 
@@ -315,7 +315,7 @@ class(now)
 ```
 
 
-```r
+``` r
 genero <- factor(c("feminino", "masculino", 
                    "feminino", "masculino"))
 
@@ -326,7 +326,7 @@ typeof(genero)
 ## [1] "integer"
 ```
 
-```r
+``` r
 attributes(genero)
 ```
 
@@ -339,7 +339,7 @@ attributes(genero)
 ```
 
 
-```r
+``` r
 unclass(genero)
 ```
 
@@ -349,7 +349,7 @@ unclass(genero)
 ## [1] "feminino"  "masculino"
 ```
 
-```r
+``` r
 n <- unclass(genero)
 
 as.integer(genero)
@@ -359,7 +359,7 @@ as.integer(genero)
 ## [1] 1 2 1 2
 ```
 
-```r
+``` r
 as.character(genero)
 ```
 
@@ -368,7 +368,7 @@ as.character(genero)
 ```
 
 
-```r
+``` r
 sum(c(TRUE, TRUE, FALSE, FALSE))
 ```
 
@@ -376,7 +376,7 @@ sum(c(TRUE, TRUE, FALSE, FALSE))
 ## [1] 2
 ```
 
-```r
+``` r
 sum(c(1, 1, 0, 0))
 ```
 
@@ -384,7 +384,7 @@ sum(c(1, 1, 0, 0))
 ## [1] 2
 ```
 
-```r
+``` r
 as.character(1)
 ```
 
@@ -392,7 +392,7 @@ as.character(1)
 ## [1] "1"
 ```
 
-```r
+``` r
 as.logical(1)
 ```
 
@@ -400,7 +400,7 @@ as.logical(1)
 ## [1] TRUE
 ```
 
-```r
+``` r
 as.numeric(FALSE)
 ```
 
@@ -409,7 +409,7 @@ as.numeric(FALSE)
 ```
 
 
-```r
+``` r
 df <- data.frame(
     face = c("ás", "dois", "quatro"),  
     naipe = c("ouros", "copas", "paus"), 
@@ -425,7 +425,7 @@ df
 ```
 
 
-```r
+``` r
 write.csv(df, file = "cartas.csv", 
           row.names = FALSE, quote=FALSE)
 

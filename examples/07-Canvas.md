@@ -1,26 +1,26 @@
 
-```r
+``` r
 weight <- c(60, 72, 57, 90, 95, 72) 
 height <- c(1.75, 1.80, 1.65, 1.90, 1.74, 1.91)
 subject <- c("A", "B", "C", "D", "E", "F")
 ```
 
 
-```r
+``` r
 plot(height, weight)
 ```
 
 ![plot of chunk unnamed-chunk-2](fig/07-Canvas/unnamed-chunk-2-1.png)
 
 
-```r
+``` r
 plot(height, weight, pch=2)
 ```
 
 ![plot of chunk unnamed-chunk-3](fig/07-Canvas/unnamed-chunk-3-1.png)
 
 
-```r
+``` r
 args(plot.default)
 ```
 
@@ -34,12 +34,12 @@ args(plot.default)
 ```
 
 
-```r
+``` r
 ?plot
 ```
 
 
-```r
+``` r
 plot(height, weight)
 hh = c(1.65, 1.70, 1.75, 1.80, 1.85, 1.90)
 lines(hh, 22.5 * hh^2)

@@ -1,12 +1,12 @@
 
-```r
+``` r
 weight <- c(60, 72, 57, 90, 95, 72) 
 height <- c(1.75, 1.80, 1.65, 1.90, 1.74, 1.91)
 subject <- c("A", "B", "C", "D", "E", "F")
 ```
 
 
-```r
+``` r
 d <- data.frame(weight=weight, height=height, subject=subject)
 head(d)
 ```
@@ -22,7 +22,7 @@ head(d)
 ```
 
 
-```r
+``` r
 sort(d$height)
 ```
 
@@ -31,7 +31,7 @@ sort(d$height)
 ```
 
 
-```r
+``` r
 order(d$height)
 ```
 
@@ -40,7 +40,7 @@ order(d$height)
 ```
 
 
-```r
+``` r
 o <- order(d$height)
 ds <- d[o,]
 head(ds)

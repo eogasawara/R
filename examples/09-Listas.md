@@ -1,12 +1,12 @@
 
-```r
+``` r
 weight <- c(60, 72, 57, 90, 95, 72) 
 height <- c(1.75, 1.80, 1.65, 1.90, 1.74, 1.91)
 subject <- c("A", "B", "C", "D", "E", "F")
 ```
 
 
-```r
+``` r
 mybag <- list(weight, height, subject, 0, "a")
 mybag
 ```
@@ -29,7 +29,7 @@ mybag
 ```
 
 
-```r
+``` r
 n <- length(mybag)
 mybag[[n+1]] <- "b"
 mybag
@@ -56,7 +56,7 @@ mybag
 ```
 
 
-```r
+``` r
 slice <- mybag[1]
 slice
 ```
@@ -66,7 +66,7 @@ slice
 ## [1] 60 72 57 90 95 72
 ```
 
-```r
+``` r
 is.list(slice)
 ```
 
@@ -75,7 +75,7 @@ is.list(slice)
 ```
 
 
-```r
+``` r
 slice <- mybag[c(1,3)]
 slice
 ```
@@ -88,7 +88,7 @@ slice
 ## [1] "A" "B" "C" "D" "E" "F"
 ```
 
-```r
+``` r
 is.list(slice)
 ```
 
@@ -97,7 +97,7 @@ is.list(slice)
 ```
 
 
-```r
+``` r
 is.vector(slice)
 ```
 
@@ -106,7 +106,7 @@ is.vector(slice)
 ```
 
 
-```r
+``` r
 h <- mybag[[1]]
 h
 ```
@@ -116,7 +116,7 @@ h
 ```
 
 
-```r
+``` r
 is.vector(h)
 ```
 
@@ -124,7 +124,7 @@ is.vector(h)
 ## [1] TRUE
 ```
 
-```r
+``` r
 is.list(h)
 ```
 
@@ -133,7 +133,7 @@ is.list(h)
 ```
 
 
-```r
+``` r
 mybag <- list(weight=weight, height=height, subject=subject, 
               valor=0, nome="a")
 mybag
@@ -157,7 +157,7 @@ mybag
 ```
 
 
-```r
+``` r
 mybag$bmi <- mybag$weight/mybag$height^2
 mybag[[4]] <- NULL
 mybag$nome <- NULL

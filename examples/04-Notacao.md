@@ -1,5 +1,5 @@
 
-```r
+``` r
 faces <- c("ás", "dois", "três", "quatro",
            "cinco", "seis", "sete", "oito",
            "nove", "dez", "valete", "dama", "rei")
@@ -65,7 +65,7 @@ baralho
 ```
 
 
-```r
+``` r
 baralho$valor <- c(1:13, 1:13, 1:13, 1:13)
 baralho
 ```
@@ -126,7 +126,7 @@ baralho
 ## 52    rei espadas    13
 ```
 
-```r
+``` r
 head(baralho)
 ```
 
@@ -141,7 +141,7 @@ head(baralho)
 ```
 
 
-```r
+``` r
 baralho[1, 1] 
 ```
 
@@ -150,7 +150,7 @@ baralho[1, 1]
 ## Levels: ás dois três quatro cinco seis sete oito nove dez valete dama rei
 ```
 
-```r
+``` r
 baralho[1, "face"] 
 ```
 
@@ -159,7 +159,7 @@ baralho[1, "face"]
 ## Levels: ás dois três quatro cinco seis sete oito nove dez valete dama rei
 ```
 
-```r
+``` r
 baralho[c(1,2), 1] 
 ```
 
@@ -168,19 +168,19 @@ baralho[c(1,2), 1]
 ## Levels: ás dois três quatro cinco seis sete oito nove dez valete dama rei
 ```
 
-```r
+``` r
 baralho[ , 1]
 ```
 
 ```
-##  [1] ás     dois   três   quatro cinco  seis   sete   oito   nove   dez    valete dama   rei    ás     dois   três   quatro cinco  seis   sete   oito  
-## [22] nove   dez    valete dama   rei    ás     dois   três   quatro cinco  seis   sete   oito   nove   dez    valete dama   rei    ás     dois   três  
-## [43] quatro cinco  seis   sete   oito   nove   dez    valete dama   rei   
+##  [1] ás     dois   três   quatro cinco  seis   sete   oito   nove   dez    valete dama   rei    ás     dois   três   quatro cinco  seis   sete   oito   nove  
+## [23] dez    valete dama   rei    ás     dois   três   quatro cinco  seis   sete   oito   nove   dez    valete dama   rei    ás     dois   três   quatro cinco 
+## [45] seis   sete   oito   nove   dez    valete dama   rei   
 ## Levels: ás dois três quatro cinco seis sete oito nove dez valete dama rei
 ```
 
 
-```r
+``` r
 baralho[c(11,14), "face"] 
 ```
 
@@ -189,7 +189,7 @@ baralho[c(11,14), "face"]
 ## Levels: ás dois três quatro cinco seis sete oito nove dez valete dama rei
 ```
 
-```r
+``` r
 baralho[c(11,14), 1] 
 ```
 
@@ -198,7 +198,7 @@ baralho[c(11,14), 1]
 ## Levels: ás dois três quatro cinco seis sete oito nove dez valete dama rei
 ```
 
-```r
+``` r
 baralho$face[c(11,14)]
 ```
 
@@ -208,7 +208,7 @@ baralho$face[c(11,14)]
 ```
 
 
-```r
+``` r
 baralho[11, 1:2] 
 ```
 
@@ -217,7 +217,7 @@ baralho[11, 1:2]
 ## 11 valete ouros
 ```
 
-```r
+``` r
 baralho[c(11,14), 1:2] 
 ```
 
@@ -227,7 +227,7 @@ baralho[c(11,14), 1:2]
 ## 14     ás copas
 ```
 
-```r
+``` r
 baralho[c(11,14), c("face", "naipe")] 
 ```
 
@@ -238,7 +238,7 @@ baralho[c(11,14), c("face", "naipe")]
 ```
 
 
-```r
+``` r
 baralho[c(11,14), "face", drop=FALSE] 
 ```
 
@@ -248,7 +248,7 @@ baralho[c(11,14), "face", drop=FALSE]
 ## 14     ás
 ```
 
-```r
+``` r
 baralho[c(11,14), 1, drop=FALSE] 
 ```
 
@@ -259,7 +259,7 @@ baralho[c(11,14), 1, drop=FALSE]
 ```
 
 
-```r
+``` r
 baralho[c(1:13), 1] 
 ```
 
@@ -268,7 +268,7 @@ baralho[c(1:13), 1]
 ## Levels: ás dois três quatro cinco seis sete oito nove dez valete dama rei
 ```
 
-```r
+``` r
 baralho[-c(14:52), 1] 
 ```
 
@@ -277,7 +277,7 @@ baralho[-c(14:52), 1]
 ## Levels: ás dois três quatro cinco seis sete oito nove dez valete dama rei
 ```
 
-```r
+``` r
 baralho[1:3, -1] 
 ```
 
@@ -289,7 +289,7 @@ baralho[1:3, -1]
 ```
 
 
-```r
+``` r
 baralho[ , ]
 ```
 
@@ -349,7 +349,7 @@ baralho[ , ]
 ## 52    rei espadas    13
 ```
 
-```r
+``` r
 baralho[1, ] 
 ```
 
@@ -358,19 +358,19 @@ baralho[1, ]
 ## 1   ás ouros     1
 ```
 
-```r
+``` r
 baralho[ , 1] 
 ```
 
 ```
-##  [1] ás     dois   três   quatro cinco  seis   sete   oito   nove   dez    valete dama   rei    ás     dois   três   quatro cinco  seis   sete   oito  
-## [22] nove   dez    valete dama   rei    ás     dois   três   quatro cinco  seis   sete   oito   nove   dez    valete dama   rei    ás     dois   três  
-## [43] quatro cinco  seis   sete   oito   nove   dez    valete dama   rei   
+##  [1] ás     dois   três   quatro cinco  seis   sete   oito   nove   dez    valete dama   rei    ás     dois   três   quatro cinco  seis   sete   oito   nove  
+## [23] dez    valete dama   rei    ás     dois   três   quatro cinco  seis   sete   oito   nove   dez    valete dama   rei    ás     dois   três   quatro cinco 
+## [45] seis   sete   oito   nove   dez    valete dama   rei   
 ## Levels: ás dois três quatro cinco seis sete oito nove dez valete dama rei
 ```
 
 
-```r
+``` r
 baralho[1, c(TRUE, TRUE, FALSE)]
 ```
 
@@ -380,7 +380,7 @@ baralho[1, c(TRUE, TRUE, FALSE)]
 ```
 
 
-```r
+``` r
 filtro <- baralho$valor < 3
 baralho[filtro, ]
 ```
@@ -397,7 +397,7 @@ baralho[filtro, ]
 ## 41 dois espadas     2
 ```
 
-```r
+``` r
 baralho[baralho$valor < 3,]
 ```
 
@@ -414,17 +414,17 @@ baralho[baralho$valor < 3,]
 ```
 
 
-```r
+``` r
 ordem <- sample(1:nrow(baralho))
 ordem
 ```
 
 ```
-##  [1] 34 31  8 33 18 50 43 47 35 12  9 28 46 19 22 49 29  3  1 15 37  4 42 38 10 23 48 32 25  6 27 16 44  7 45 52 20 24 41 11 21 17 39 13  2  5 36 26 51
-## [50] 30 14 40
+##  [1] 34 31  8 33 18 50 43 47 35 12  9 28 46 19 22 49 29  3  1 15 37  4 42 38 10 23 48 32 25  6 27 16 44  7 45 52 20 24 41 11 21 17 39 13  2  5 36 26 51 30 14
+## [52] 40
 ```
 
-```r
+``` r
 cartas <- baralho[ordem,]
 cartas
 ```
@@ -486,7 +486,7 @@ cartas
 ```
 
 
-```r
+``` r
 embaralhar <- function(baralho) {
   ordem <- sample(1:nrow(baralho))
   return(baralho[ordem,])
