@@ -1,0 +1,31 @@
+```{r}
+weight <- c(60, 72, 57, 90, 95, 72) 
+height <- c(1.75, 1.80, 1.65, 1.90, 1.74, 1.91)
+subject <- c("A", "B", "C", "D", "E", "F")
+```
+
+```{r}
+d <- data.frame(weight=weight, height=height, subject=subject)
+head(d)
+```
+
+```{r}
+lapply(d[,1:2], mean, na.rm=TRUE)
+```
+
+```{r}
+sapply(d[,1:2], mean, na.rm=TRUE)
+```
+
+```{r}
+m <- as.matrix(d[,1:2])
+```
+
+```{r}
+apply(m, 1, min, na.rm=TRUE)
+```
+
+```{r}
+apply(m, 2, min, na.rm=TRUE)
+```
+
