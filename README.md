@@ -1,8 +1,6 @@
-# R
+# Slides de programação em R
 
-Slides de metodologia cientifica
-
-Abaixo esta a lista numerada das apresentacoes em PDF com o titulo e uma breve descricao.
+Abaixo está a lista numerada das apresentações em PDF com o título e uma breve descrição.
 
 1. [01 - Introducao](01-Introducao.pdf) - Panorama da disciplina e da abordagem de metodologia cientifica aplicada ao uso do R.
 2. [02 - Pacotes e Ajuda](02-Pacotes-Ajuda.pdf) - Instalacao e carregamento de pacotes, alem de formas de consultar a documentacao e exemplos.
